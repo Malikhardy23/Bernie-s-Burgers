@@ -548,10 +548,10 @@ form textarea{
     box-shadow: 0px 0px 3px black;
     border-radius: 5px;
     width: 350px;
-    top: 100px;
     left: calc(50% - 175px);
     position: absolute;
     font-family: sans-serif;
+    top: 530%;
   }
   #eventTitleInput {
     padding: 10px;

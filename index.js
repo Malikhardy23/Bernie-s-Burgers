@@ -1,3 +1,38 @@
+// mobile overlay //
+
+const burger = document.getElementById("burger");
+const xBtn = document.getElementById("xBtn");
+const body = document.getElementById("body");
+console.log(burger);
+
+let isOpen = false;
+
+const openNav = () => {
+    document.getElementById("nav").style.height = "100%";
+    isOpen = true;
+}
+
+const closeNav = () => {
+    document.getElementById("nav").style.height = "0%";
+    isOpen = false;
+}
+
+burger.addEventListener('click', (e) => {
+    if(e.target){
+        openNav();
+    } 
+    else if(body){
+        closeNav();
+    }
+});
+
+xBtn.addEventListener('click', (e) => {
+    if(e.target){
+        closeNav();
+    }
+})
+
+
 
 
 // month counter 
